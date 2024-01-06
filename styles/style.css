@@ -161,3 +161,51 @@ footer {
 #dev {
     width: 100%;
 }
+
+
+/* other  */
+
+.other-fieldset select,
+.other-fieldset textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: #888;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 0.3em;
+}
+
+.other-fieldset select::placeholder,
+.other-fieldset textarea::placeholder {
+    color: #888;
+}
+
+
+
+.form input[type="submit"],
+.form input[type="reset"] {
+    width: 100%; /* Make the buttons as wide as the parent container (comments textarea) */
+    margin-top: 1em; /* Add some spacing between the textarea and buttons */
+    padding: 10px; /* Add padding for better appearance */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border: none; /* Remove the border */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 10px 15px; /* Add padding for better appearance */
+    cursor: pointer; /* Add a pointer cursor for better usability */
+    
+}
+
+.form input[type="submit"] {
+    background: rgb(31, 67, 119); /* Set the background color to blue */
+    color: white; /* Set the text color to white or any other desired color */
+}
+
+.form input[type="reset"] {
+    color: red; /* Set the text color of the "Clear Form" button to red */
+}
