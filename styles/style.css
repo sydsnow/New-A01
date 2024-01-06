@@ -1,0 +1,90 @@
+/* CSS Reset */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-family: "Roboto Slab", serif;
+
+}
+body {
+    /* height: 100vh; */
+    margin: 0;
+    background: linear-gradient(
+        0deg, 
+        rgb(229, 70, 45) 0%,
+        rgb(245, 192, 158) 100%
+    );
+}
+.form {
+    width: 450px;
+    height: 1000px;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 1rem 1rem 1rem -0.5rem black;
+    margin-top: 20px;
+    padding: 20px;
+}
+form {
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+#signup {
+    color: rgb(31, 67, 119);
+    /* text-decoration: underline; */
+    text-shadow: 0.2rem 0.2rem 0.2rem rgb(186, 186, 186);
+    font-size: 2em;
+}
+legend {
+    font-weight: 700;
+    font-size: 1.2em;;
+}
+.standalone {
+    font-weight: 700;
+}
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+#requirements {
+    font-size: 0.75em;
+    font-style: italic;
+}
+#account-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+#email, #username, #password {
+    background-color: rgb(233, 237, 238);
+    /* border-radius: 1px; */
+}
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+#dev-ops {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#cl {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+}
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
