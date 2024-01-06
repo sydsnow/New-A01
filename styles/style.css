@@ -1,23 +1,24 @@
 /* CSS Reset */
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
     font-family: "Roboto Slab", serif;
-
 }
+
 body {
-    /* height: 100vh; */
     margin: 0;
     background: linear-gradient(
         0deg, 
         rgb(229, 70, 45) 0%,
         rgb(245, 192, 158) 100%
     );
-    counter-reset: section;  /* counter for number in circles */
+    counter-reset: section;  /* Counter for numbered circles */
 }
 
+/* Form Styles */
 .form {
     width: 450px;
     height: 1000px;
@@ -28,6 +29,7 @@ body {
     margin-top: 20px;
     padding: 20px;
 }
+
 form {
     height: 90%;
     display: flex;
@@ -35,16 +37,16 @@ form {
     flex-grow: 1;
 }
 
+/* Signup Styles */
 #signup {
     color: rgb(31, 67, 119);
-    /* text-decoration: underline; */
     text-shadow: 0.2rem 0.2rem 0.2rem rgb(186, 186, 186);
     font-size: 2em;
     position: relative;
     display: inline-block;
 }
 
-/* signup underline  */
+/* Signup Underline */
 #signup::before { 
     content: "";
     position: absolute;
@@ -56,20 +58,24 @@ form {
     box-shadow: 1px 2px 4px rgb(31, 67, 119);
 }
 
-/* fieldset {
+/* Horizontal Lines */
+fieldset {
     border: none;
     border-top: 0.1rem solid black;
     margin-top: 1.5rem;
-} */
-legend {
-    /* margin-left: 2rem;
-    padding: 0.5rem; */
-    font-weight: 700;
-    font-size: 1.2em;;
 }
+
+/* Legend Styles */
+legend {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+/* Visual Elements Styles */
 .standalone {
     font-weight: 700;
 }
+
 .visually-hidden {
     position: absolute !important;
     width: 1px !important;
@@ -81,22 +87,19 @@ legend {
     white-space: nowrap !important;
     border: 0 !important;
 }
+
 #requirements {
     font-size: 0.75em;
     font-style: italic;
 }
+
+/* Account Info Styles */
 #account-info {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-/* #email, #username, #password {
-    border: none;
-    background-color: rgba(255, 255, 255, 0.2);
-} */
-
-/* account info input box  */
 #account-info input,
 #account-info textarea {
     width: 100%;
@@ -113,60 +116,55 @@ legend {
     margin-top: 0.3em;
 }
 
-
+/* Skills Styles */
 #skills {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
+
 #dev-ops {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%; */
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 #cl {
     display: flex;
     flex: row;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     width: 100%;
 }
+
 footer {
     display: flex;
     justify-content: flex-end;
 }
+
 #core {
-    /* display: flex; */
     width: 100%;
-    /* flex-direction: column; */
 }
+
 #row1, #row2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* #libraries {
-    display: flex;
-    flex-direction: column;
-} */
+/* Library Styles */
 #library {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 #libraries {
     width: 100%;
 }
+
 #dev {
     width: 100%;
 }
 
-
-/* other  */
-
+/* Other Fieldset Styles */
 .other-fieldset select,
 .other-fieldset textarea {
     width: 100%;
@@ -188,47 +186,36 @@ footer {
     color: #888;
 }
 
-/* submit button & clean form button */
+/* Submit & Reset Button Styles */
 .form input[type="submit"],
 .form input[type="reset"] {
-    width: 100%; /* Make the buttons as wide as the parent container*/
+    width: 100%;
     margin-top: 1em; 
     padding: 10px; 
-    box-sizing: border-box; /* Include padding in the width calculation */
-    border: none; /* Remove the border */
-    border-radius: 8px; 
-    padding: 10px 15px; /* Add padding for better appearance */
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
     cursor: pointer; 
-    
 }
 
-/* submit button  */
+/* Submit Button Styles */
 .form input[type="submit"] {
     background: rgb(31, 67, 119); 
     color: white; 
 }
 
-/* clear form button */
+/* Reset Button Styles */
 .form input[type="reset"] {
     color: red; 
     background: white;
     border: 1px solid lightgray;
 }
 
-
-/* horizontal lines  */
-
-fieldset {
-    border: none;
-    border-top: 0.1rem solid black;
-    margin-top: 1.5rem;
-}
-
-/* numbered circles */
-
+/* Numbered Circles */
 .numbered::before {
-    counter-increment: section;  /* Increment counter */
-    content: counter(section);  /* Insert counter value */
+    counter-increment: section;
+    content: counter(section);
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -238,4 +225,4 @@ fieldset {
     text-align: center;
     font-size: 18px;  
     margin-right: 5px;
-  }
+}
