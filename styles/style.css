@@ -75,10 +75,13 @@ legend {
     width: 100%;
 }
 #dev-ops {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%; */
+    display: grid;
     width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #cl {
     display: flex;
@@ -96,22 +99,18 @@ footer {
     width: 100%;
     /* flex-direction: column; */
 }
-#row1 {
-    display: flex;
-    justify-content: space-around;
+#row1, #row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-#row2 {
-    display: flex;
-    justify-content: space-around;
-}
+
 /* #libraries {
     display: flex;
     flex-direction: column;
 } */
 #library {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 #libraries {
     width: 100%;
