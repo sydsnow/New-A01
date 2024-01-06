@@ -72,6 +72,7 @@ legend {
 #skills {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 #dev-ops {
     display: flex;
@@ -82,9 +83,39 @@ legend {
 #cl {
     display: flex;
     flex: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 100%;
 }
 footer {
     display: flex;
     justify-content: flex-end;
+}
+#core {
+    /* display: flex; */
+    width: 100%;
+    /* flex-direction: column; */
+}
+#row1 {
+    display: flex;
+    justify-content: space-around;
+}
+#row2 {
+    display: flex;
+    justify-content: space-around;
+}
+/* #libraries {
+    display: flex;
+    flex-direction: column;
+} */
+#library {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#libraries {
+    width: 100%;
+}
+#dev {
+    width: 100%;
 }
