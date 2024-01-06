@@ -33,6 +33,7 @@ form {
     flex-wrap: wrap;
     flex-grow: 1;
 }
+
 #signup {
     color: rgb(31, 67, 119);
     /* text-decoration: underline; */
@@ -186,26 +187,29 @@ footer {
     color: #888;
 }
 
-
-
+/* submit button & clean form button */
 .form input[type="submit"],
 .form input[type="reset"] {
-    width: 100%; /* Make the buttons as wide as the parent container (comments textarea) */
-    margin-top: 1em; /* Add some spacing between the textarea and buttons */
-    padding: 10px; /* Add padding for better appearance */
+    width: 100%; /* Make the buttons as wide as the parent container*/
+    margin-top: 1em; 
+    padding: 10px; 
     box-sizing: border-box; /* Include padding in the width calculation */
     border: none; /* Remove the border */
-    border-radius: 8px; /* Add rounded corners */
+    border-radius: 8px; 
     padding: 10px 15px; /* Add padding for better appearance */
-    cursor: pointer; /* Add a pointer cursor for better usability */
+    cursor: pointer; 
     
 }
 
+/* submit button  */
 .form input[type="submit"] {
-    background: rgb(31, 67, 119); /* Set the background color to blue */
-    color: white; /* Set the text color to white or any other desired color */
+    background: rgb(31, 67, 119); 
+    color: white; 
 }
 
+/* clear form button */
 .form input[type="reset"] {
-    color: red; /* Set the text color of the "Clear Form" button to red */
+    color: red; 
+    background: white;
+    border: 1px solid lightgray;
 }
