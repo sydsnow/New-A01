@@ -88,10 +88,30 @@ legend {
     flex-direction: column;
     flex-grow: 1;
 }
-#email, #username, #password {
+
+/* #email, #username, #password {
+    border: none;
     background-color: rgb(233, 237, 238);
-    /* border-radius: 1px; */
+} */
+
+/* input box  */
+#account-info input,
+#account-info textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: #888;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 0.3em;
 }
+
+
 #skills {
     display: flex;
     flex-wrap: wrap;
