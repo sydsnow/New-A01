@@ -21,7 +21,7 @@ body {
 /* Form Styles */
 .form {
     width: 450px;
-    height: 950px;
+    height: 1000px;
     border-radius: 15px;
     margin: 0 auto;
     background-color: white;
@@ -196,6 +196,11 @@ footer {
 .other-fieldset textarea::placeholder {
     color: #888;
 }
+/* More details styles */
+#more-details {
+    display: flex;
+    flex-direction: column;
+}
 
 /* Submit & Reset Button Styles */
 .form input[type="submit"],
@@ -238,7 +243,10 @@ footer {
     font-size: 18px;  
     margin-right: 5px;
 }
-#username:focus, #email:focus, #password:focus, #comments:focus {
+#username:focus, #email:focus, #password:focus, #comments:focus, #details:focus {
     background: white;
     border: 2px solid rgb(238, 210, 139);
+}
+#more-details {
+    display: none;
 }
