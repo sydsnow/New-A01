@@ -21,7 +21,7 @@ body {
 /* Form Styles */
 .form {
     width: 450px;
-    height: 1000px;
+    height: 1030px;
     border-radius: 15px;
     margin: 0 auto;
     background-color: white;
@@ -176,6 +176,7 @@ footer {
 }
 
 /* Other Fieldset Styles */
+#details,
 .other-fieldset select,
 .other-fieldset textarea {
     width: 100%;
@@ -192,6 +193,7 @@ footer {
     margin-top: 0.3em;
 }
 
+#details::placeholder,
 .other-fieldset select::placeholder,
 .other-fieldset textarea::placeholder {
     color: #888;
@@ -201,6 +203,7 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Submit & Reset Button Styles */
 .form input[type="submit"],
