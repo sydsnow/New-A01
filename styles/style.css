@@ -21,7 +21,7 @@ body {
 /* Form Styles */
 .form {
     width: 450px;
-    height: 1000px;
+    height: 950px;
     border-radius: 15px;
     margin: 0 auto;
     background-color: white;
@@ -62,6 +62,7 @@ form {
 #experience {
     position: relative;
     width: 100%;
+    margin-bottom: 10px;
 }
 /* Horizontal Lines */
 fieldset {
@@ -126,6 +127,8 @@ legend {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #dev-ops {
