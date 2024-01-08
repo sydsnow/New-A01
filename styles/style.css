@@ -235,3 +235,7 @@ footer {
     font-size: 18px;  
     margin-right: 5px;
 }
+#username:focus, #email:focus, #password:focus, #comments:focus {
+    background: white;
+    border: 2px solid rgb(238, 210, 139);
+}
