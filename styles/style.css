@@ -1,24 +1,27 @@
 /* CSS Reset */
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
     font-family: "Roboto Slab", serif;
-
 }
+
 body {
-    /* height: 100vh; */
     margin: 0;
     background: linear-gradient(
         0deg, 
         rgb(229, 70, 45) 0%,
         rgb(245, 192, 158) 100%
     );
+    counter-reset: section;  /* Counter for numbered circles */
 }
+
+/* Form Styles */
 .form {
     width: 450px;
-    height: 1000px;
+    height: 950px;
     border-radius: 15px;
     margin: 0 auto;
     background-color: white;
@@ -26,25 +29,59 @@ body {
     margin-top: 20px;
     padding: 20px;
 }
+
 form {
     height: 90%;
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
 }
+
+/* Signup Styles */
 #signup {
     color: rgb(31, 67, 119);
-    /* text-decoration: underline; */
     text-shadow: 0.2rem 0.2rem 0.2rem rgb(186, 186, 186);
     font-size: 2em;
+    position: relative;
+    display: inline-block;
+    top: -20px;
 }
+
+/* Signup Underline */
+#signup::before { 
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 3em;
+    height: 0.1em;
+    background: rgb(31, 67, 119);
+    box-shadow: 1px 2px 4px rgb(31, 67, 119);
+}
+
+#experience {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* Horizontal Lines */
+fieldset {
+    border: none;
+    border-top: 0.1rem solid black;
+    margin-top: 1 rem;
+}
+
+/* Legend Styles */
 legend {
     font-weight: 700;
-    font-size: 1.2em;;
+    font-size: 1 rem;
 }
+
+/* Visual Elements Styles */
 .standalone {
     font-weight: 700;
 }
+
 .visually-hidden {
     position: absolute !important;
     width: 1px !important;
@@ -56,65 +93,145 @@ legend {
     white-space: nowrap !important;
     border: 0 !important;
 }
+
 #requirements {
     font-size: 0.75em;
     font-style: italic;
 }
+
+/* Account Info Styles */
 #account-info {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-#email, #username, #password {
-    background-color: rgb(233, 237, 238);
-    /* border-radius: 1px; */
+
+#account-info input,
+#account-info textarea {
+    width: 100%;
+    background: rgba(164, 161, 162, 0.359);
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: #888;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 0.3em;
 }
+
+/* Skills Styles */
 #skills {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
 #dev-ops {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%; */
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 #cl {
     display: flex;
     flex: row;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     width: 100%;
 }
+
 footer {
     display: flex;
     justify-content: flex-end;
+    margin-right: 30px;
 }
+
 #core {
-    /* display: flex; */
     width: 100%;
-    /* flex-direction: column; */
 }
+
 #row1, #row2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* #libraries {
-    display: flex;
-    flex-direction: column;
-} */
+/* Library Styles */
 #library {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 #libraries {
     width: 100%;
 }
+
 #dev {
     width: 100%;
+}
+
+/* Other Fieldset Styles */
+.other-fieldset select,
+.other-fieldset textarea {
+    width: 100%;
+    background: rgba(164, 161, 162, 0.359);
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: #888;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 0.3em;
+}
+
+.other-fieldset select::placeholder,
+.other-fieldset textarea::placeholder {
+    color: #888;
+}
+
+/* Submit & Reset Button Styles */
+.form input[type="submit"],
+.form input[type="reset"] {
+    width: 100%;
+    margin-top: 1em; 
+    padding: 10px; 
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer; 
+}
+
+/* Submit Button Styles */
+.form input[type="submit"] {
+    background: rgb(31, 67, 119); 
+    color: white; 
+}
+
+/* Reset Button Styles */
+.form input[type="reset"] {
+    color: red; 
+    background: white;
+    border: 1px solid lightgray;
+}
+
+/* Numbered Circles */
+.numbered::before {
+    counter-increment: section;
+    content: counter(section);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(31, 67, 119);
+    color: white;
+    text-align: center;
+    font-size: 18px;  
+    margin-right: 5px;
 }

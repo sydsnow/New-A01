@@ -14,7 +14,7 @@
         <h2 id="signup">Signup</h2>
         <form>
             <fieldset id="account-info">
-                <legend>Account Info</legend>
+                <legend class="numbered">Account Info</legend>
                 <label for="username" class="visually-hidden">Username</label>
                 <input
                 type="text"
@@ -47,7 +47,7 @@
                 <p id="requirements">Minimum 12 Characters.<br>Must include uppercase, lowercase, number and symbol.</p>
             </fieldset>
             <fieldset id="skills">
-                <legend>Dev Skills</legend>
+                <legend class="numbered">Dev Skills</legend>
                 <div id="core">
                     <label class="standalone">Core Languages</label>
                     <div id="cl">
@@ -117,8 +117,8 @@
                 </div>
               
             </fieldset>
-            <fieldset>
-                <legend>Experience</legend>
+            <fieldset id="experience">
+                <legend class="numbered">Experience</legend>
                 <input type="radio" name="experience" id="beginner" value="beginner">
                 <label for="beginner">Beginner</label>
                 <input type="radio" name="experience" id="intermediate" value="intermediate">
@@ -126,8 +126,8 @@
                 <input type="radio" name="experience" id="advanced" value="advanced">
                 <label for="advanced">Advanced</label>
             </fieldset>
-            <fieldset>
-                <legend>Other</legend>
+            <fieldset class="other-fieldset">
+                <legend class="numbered" >Other</legend>
                 <label for="referal">How did you hear about us?</label>
                 <select name="referal" id="referal">
                     <option value="">Please Select...</option>
