@@ -44,6 +44,7 @@ form {
     font-size: 2em;
     position: relative;
     display: inline-block;
+    top: -20px;
 }
 
 /* Signup Underline */
@@ -58,17 +59,21 @@ form {
     box-shadow: 1px 2px 4px rgb(31, 67, 119);
 }
 
+#experience {
+    position: relative;
+    width: 100%;
+}
 /* Horizontal Lines */
 fieldset {
     border: none;
     border-top: 0.1rem solid black;
-    margin-top: 1.5rem;
+    margin-top: 1 rem;
 }
 
 /* Legend Styles */
 legend {
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1 rem;
 }
 
 /* Visual Elements Styles */
